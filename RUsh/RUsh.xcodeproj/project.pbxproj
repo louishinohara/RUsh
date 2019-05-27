@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7997B048BDAC50EEDBE680BD /* Pods_RUsh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F53668D064548FCD3D7A651 /* Pods_RUsh.framework */; };
 		BD77459A229B6E3900B28121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD774599229B6E3900B28121 /* AppDelegate.swift */; };
 		BD77459C229B6E3900B28121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD77459B229B6E3900B28121 /* ViewController.swift */; };
 		BD77459F229B6E3900B28121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD77459D229B6E3900B28121 /* Main.storyboard */; };
 		BD7745A1229B6E3A00B28121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7745A0229B6E3A00B28121 /* Assets.xcassets */; };
 		BD7745A4229B6E3A00B28121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7745A2229B6E3A00B28121 /* LaunchScreen.storyboard */; };
 		BD7745AF229B6E3A00B28121 /* RUshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7745AE229B6E3A00B28121 /* RUshTests.swift */; };
+		BD7745BA229B7B0900B28121 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD7745B9229B7B0900B28121 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF764B80C1D1F141D1D236C /* Pods-RUsh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUsh.debug.xcconfig"; path = "Target Support Files/Pods-RUsh/Pods-RUsh.debug.xcconfig"; sourceTree = "<group>"; };
+		2F53668D064548FCD3D7A651 /* Pods_RUsh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUsh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B98B7557B6E879A799E41B /* Pods-RUsh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUsh.release.xcconfig"; path = "Target Support Files/Pods-RUsh/Pods-RUsh.release.xcconfig"; sourceTree = "<group>"; };
 		BD774596229B6E3900B28121 /* RUsh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RUsh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD774599229B6E3900B28121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD77459B229B6E3900B28121 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		BD7745AA229B6E3A00B28121 /* RUshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RUshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7745AE229B6E3A00B28121 /* RUshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUshTests.swift; sourceTree = "<group>"; };
 		BD7745B0229B6E3A00B28121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7745B9229B7B0900B28121 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7997B048BDAC50EEDBE680BD /* Pods_RUsh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6092ADAD7620F5D2EE7DC7C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F53668D064548FCD3D7A651 /* Pods_RUsh.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AF54535FFB69604C705BC0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CF764B80C1D1F141D1D236C /* Pods-RUsh.debug.xcconfig */,
+				54B98B7557B6E879A799E41B /* Pods-RUsh.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD77458D229B6E3900B28121 = {
 			isa = PBXGroup;
 			children = (
 				BD774598229B6E3900B28121 /* RUsh */,
 				BD7745AD229B6E3A00B28121 /* RUshTests */,
 				BD774597229B6E3900B28121 /* Products */,
+				9AF54535FFB69604C705BC0D /* Pods */,
+				6092ADAD7620F5D2EE7DC7C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +109,7 @@
 				BD77459D229B6E3900B28121 /* Main.storyboard */,
 				BD7745A0229B6E3A00B28121 /* Assets.xcassets */,
 				BD7745A2229B6E3A00B28121 /* LaunchScreen.storyboard */,
+				BD7745B9229B7B0900B28121 /* GoogleService-Info.plist */,
 				BD7745A5229B6E3A00B28121 /* Info.plist */,
 			);
 			path = RUsh;
@@ -103,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD7745B3229B6E3A00B28121 /* Build configuration list for PBXNativeTarget "RUsh" */;
 			buildPhases = (
+				7127B9BD01FB21C172770F34 /* [CP] Check Pods Manifest.lock */,
 				BD774592229B6E3900B28121 /* Sources */,
 				BD774593229B6E3900B28121 /* Frameworks */,
 				BD774594229B6E3900B28121 /* Resources */,
+				ABB250555F8E0577A4B741C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7745A4229B6E3A00B28121 /* LaunchScreen.storyboard in Resources */,
+				BD7745BA229B7B0900B28121 /* GoogleService-Info.plist in Resources */,
 				BD7745A1229B6E3A00B28121 /* Assets.xcassets in Resources */,
 				BD77459F229B6E3900B28121 /* Main.storyboard in Resources */,
 			);
@@ -191,6 +222,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7127B9BD01FB21C172770F34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RUsh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB250555F8E0577A4B741C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RUsh/Pods-RUsh-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RUsh/Pods-RUsh-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RUsh/Pods-RUsh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD774592229B6E3900B28121 /* Sources */ = {
@@ -358,6 +431,7 @@
 		};
 		BD7745B4229B6E3A00B28121 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF764B80C1D1F141D1D236C /* Pods-RUsh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +450,7 @@
 		};
 		BD7745B5229B6E3A00B28121 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B98B7557B6E879A799E41B /* Pods-RUsh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -17,7 +17,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="BLQ-0Q-254">
+                                <rect key="frame" x="87" y="129" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="QI4-Eg-gFe"/>
+                                    <constraint firstAttribute="height" constant="128" id="hCO-Fo-efq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BLQ-0Q-254" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CCN-Ss-7om"/>
+                            <constraint firstItem="BLQ-0Q-254" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-175" id="Sci-1F-xRO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -25,4 +38,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="126" height="68"/>
+    </resources>
 </document>
