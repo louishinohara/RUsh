@@ -138,6 +138,7 @@
 				BD774593229B6E3900B28121 /* Frameworks */,
 				BD774594229B6E3900B28121 /* Resources */,
 				ABB250555F8E0577A4B741C8 /* [CP] Embed Pods Frameworks */,
+				B70158E9C503780AE6DE3D6F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +264,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RUsh/Pods-RUsh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B70158E9C503780AE6DE3D6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RUsh/Pods-RUsh-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RUsh/Pods-RUsh-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RUsh/Pods-RUsh-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

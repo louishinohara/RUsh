@@ -31,30 +31,38 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZPL-Dv-VoY">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verification" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZPL-Dv-VoY">
                                 <rect key="frame" x="131" y="410" width="149" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="one-time-code"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="sfI-pd-mA3">
-                                <rect key="frame" x="131" y="471" width="143" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="Wur-KA-18N">
+                                <rect key="frame" x="61" y="471" width="292" height="224"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-DG-UL2">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="30"/>
-                                        <state key="normal" title="Phone"/>
-                                        <connections>
-                                            <action selector="phoneSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZ4-BN-God"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgO-44-Gfm">
-                                        <rect key="frame" x="103" y="0.0" width="40" height="30"/>
-                                        <state key="normal" title="Verify"/>
-                                        <connections>
-                                            <action selector="verifyOtp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djs-4z-WgT"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="sfI-pd-mA3">
+                                        <rect key="frame" x="74.666666666666657" y="0.0" width="143" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-DG-UL2">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="30"/>
+                                                <state key="normal" title="Phone"/>
+                                                <connections>
+                                                    <action selector="phoneSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZ4-BN-God"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgO-44-Gfm">
+                                                <rect key="frame" x="103" y="0.0" width="40" height="30"/>
+                                                <state key="normal" title="Verify"/>
+                                                <connections>
+                                                    <action selector="verifyOtpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRs-Tc-REL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GCK-W2-Bce" customClass="GIDSignInButton">
+                                        <rect key="frame" x="0.0" y="73" width="292" height="151"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -63,10 +71,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EBs-Gh-5U4" secondAttribute="trailing" constant="66" id="Bdu-jv-vko"/>
                             <constraint firstItem="BLQ-0Q-254" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CCN-Ss-7om"/>
                             <constraint firstItem="EBs-Gh-5U4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CYt-fH-Usc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wur-KA-18N" secondAttribute="bottom" constant="41" id="H1g-fs-BUM"/>
+                            <constraint firstItem="Wur-KA-18N" firstAttribute="top" secondItem="ZPL-Dv-VoY" secondAttribute="bottom" constant="31" id="HJB-NO-z3U"/>
                             <constraint firstItem="BLQ-0Q-254" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-175" id="Sci-1F-xRO"/>
                             <constraint firstItem="ZPL-Dv-VoY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="cnK-kB-iNS"/>
                             <constraint firstItem="ZPL-Dv-VoY" firstAttribute="centerX" secondItem="EBs-Gh-5U4" secondAttribute="centerX" id="uae-Fh-vAs"/>
                             <constraint firstItem="EBs-Gh-5U4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vDK-an-NpX"/>
+                            <constraint firstItem="Wur-KA-18N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="wok-2H-Xdf"/>
+                            <constraint firstItem="Wur-KA-18N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yq9-9W-Tf6"/>
                             <constraint firstItem="ZPL-Dv-VoY" firstAttribute="top" secondItem="EBs-Gh-5U4" secondAttribute="bottom" constant="27" id="z9x-Xu-B2C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
